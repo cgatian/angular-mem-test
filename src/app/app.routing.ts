@@ -1,16 +1,17 @@
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { LoginViewComponent } from './views/login/login.component';
-import { CatalogViewComponent } from './views/catalog/catalog.component';
+import { View1Component } from './components/view1.component';
+import { View2Component } from './components/view2.component';
+
 @NgModule({
   declarations: [
-    LoginViewComponent, CatalogViewComponent
+    View1Component, View2Component
   ],
   imports: [
     RouterModule.forRoot([
-      { path: 'login', component: LoginViewComponent },
-      { path: 'catalog', component: CatalogViewComponent },
-      { path: '**', redirectTo: 'login' }
+      { path: 'view1', component: View1Component },
+      { path: 'view2', component: View2Component },
+      { path: '**', redirectTo: 'view1' }
     ])
   ],
   exports: [

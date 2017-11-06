@@ -1,5 +1,5 @@
 {
-  "name": "mem-test",
+  "name": "angular-mem-test",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "serve": "http-server ./dist"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +23,7 @@
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
+    "http-server": "^0.10.0",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
